@@ -2,9 +2,15 @@
 
 import java.util.Hashtable;
 
-public class Library extends Building{
+public class Library extends Building implements LibraryRequirements{
   private Hashtable<String, Boolean>  collection;
 
+    /**
+     * Constructor
+     * @param name
+     * @param address
+     * @param nFloors
+     */
     public Library(String name, String address, int nFloors){
       super(name, address, nFloors);
       this.collection = new Hashtable<String, Boolean>(); // initialized to an empty `Hashtable<String, Boolean>
@@ -43,8 +49,10 @@ public class Library extends Building{
      * @param title of the book being checked out
      */
     public void checkOut(String title){
-      if (this.collection.containsKey(title)){
+      if (this.collection.containsKey(title) && this.collection.get(title) == true){
       this.collection.replace(title, true, false); //replace(K key, V oldValue, V newValue)
+      } else if (this.collection.containsKey(title) && this.collection.get(title) == false){
+        throw new RuntimeException("This book is already checked out.");
       } else{
       throw new RuntimeException("We do not have this book in our collection.");
       } 

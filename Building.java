@@ -4,6 +4,12 @@ public class Building implements BuildingRequirements {
     protected String address = "<Address Unknown>";
     protected int nFloors = 1;
 
+    /**
+     * Constructor 
+     * @param name
+     * @param address
+     * @param nFloors
+     */
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
         if (address != null) { this.address = address; } 
@@ -13,18 +19,30 @@ public class Building implements BuildingRequirements {
         this.nFloors = nFloors;
     }
 
+    /**
+     * Accessor for the name attribute of the Building
+     */
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Accessor for the adress attribute of the Building
+     */
     public String getAddress() {
         return this.address;
     }
 
+    /**
+     * Accessor for the nFloors attribute of the Building
+     */
     public int getFloors() {
         return this.nFloors;
     }
 
+    /** Pretty Print function
+     * @return String returns a String that prints description/attributes of the object
+     */
     public String toString() {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address;
     }

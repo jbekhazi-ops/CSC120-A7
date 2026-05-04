@@ -1,10 +1,20 @@
 /* This is a stub for the Cafe class */
-public class Cafe extends Building {
+public class Cafe extends Building implements CafeRequirements {
     private int nCoffeeOunces; // The number of ounces of coffee remaining in inventory
     private int nSugarPackets; // The number of sugar packets remaining in inventory
     private int nCreams; // The number of "splashes" of cream remaining in inventory
     private int nCups; // The number of cups remaining in inventory
 
+   /**
+    * Constructor
+    * @param name
+    * @param address
+    * @param nFloors
+    * @param initialnCoffeeOunces
+    * @param initialnSugarPackets
+    * @param initialnCreams
+    * @param initialnCups
+    */
     public Cafe(String name, String address, int nFloors, int initialnCoffeeOunces, int initialnSugarPackets, int initialnCreams, int initialnCups) {
         super(name, address, nFloors);
         this.nCoffeeOunces = initialnCoffeeOunces;

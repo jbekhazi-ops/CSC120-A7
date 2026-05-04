@@ -8,6 +8,13 @@ public class House extends Building implements HouseRequirements{
   private boolean hasDiningRoom;
 
 
+  /**
+  * Constructor 
+  * @param name
+  * @param address
+  * @param nFloors
+  * @param DiningRoom
+  */
   public House(String name, String address, int nFloors, boolean DiningRoom){
     super(name, address, nFloors);
     this.hasDiningRoom = DiningRoom;

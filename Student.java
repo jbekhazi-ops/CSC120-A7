@@ -7,6 +7,12 @@ public class Student {
     private int classYear; 
     private ArrayList<Course> classes; 
 
+    /**
+     * COnstructor
+     * @param name
+     * @param id
+     * @param classYear
+     */
     public Student(String name, String id, int classYear) {
         this.name = name;
         this.id = id;
@@ -14,10 +20,18 @@ public class Student {
         this.classes = new ArrayList<>(); 
     }
 
+    /**
+     * Getter for name of student 
+     * @return String name of the student
+     */
     public String getName() {
         return this.name; 
     }
 
+    /**
+     * Pretty Print function
+     * @return String describing the student 
+     */
     public String toString() {
         return this.name + " ID: " + this.id + " Class Year: " + this.classYear;
     }

@@ -30,7 +30,7 @@ public class House extends Building implements HouseRequirements{
   }
   
   /** Accessor for nResidents attributes 
-   * @return the number of residents in the house
+   * @return int, the number of residents in the house
    */
   public int nResidents(){
     return this.residents.size();
@@ -51,7 +51,7 @@ public class House extends Building implements HouseRequirements{
   /**
    * Updates the `ArrayList` of `residents` every time someone moves out.
    * @param s The student being removed from the residents list.
-   * @return  returns the Student who moved out
+   * @return Student, returns the Student who moved out
    */
   public Student moveOut(Student s){ 
     if (this.residents.contains(s)){

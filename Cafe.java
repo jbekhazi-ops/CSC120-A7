@@ -61,7 +61,7 @@ public class Cafe extends Building implements CafeRequirements {
 
     /**
      * Pretty print function
-     * @return Returns the stock of the Cafe
+     * @return String Returns the stock of the Cafe
      */
     public String toString(){
         return ("Remaining amount in stock: " + this.nCoffeeOunces +  " Coffee Ounces, " + this.nSugarPackets + " Sugar Packets, " + this.nCreams + " Creams, " + this.nCups + " nCups.");

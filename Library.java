@@ -33,7 +33,7 @@ public class Library extends Building implements LibraryRequirements{
     /**
      * Updates the `Hashtable` containing the `collection` every time we remove a title.
      * @param title of the book being removed from the collection
-     * @return the title of the book removed 
+     * @return  String the title of the book removed 
      */
     public String removeTitle(String title){
       if (this.collection.containsKey(title)){
@@ -74,7 +74,7 @@ public class Library extends Building implements LibraryRequirements{
     
     /** returns true if the title appears as a key in the Libary's collection, false otherwise
      * @param title of the book we are checking for
-     * @return boolean true: if book in inventory, false if it isnt
+     * @return boolean: true: if book in inventory, false if it isnt
      */
     public boolean containsTitle(String title){
       return this.collection.containsKey(title);
@@ -83,7 +83,7 @@ public class Library extends Building implements LibraryRequirements{
     /**
      * returns true if the title is currently available, false otherwise
      * @param title of the book being checked for availability.
-     * @return true if book is available, false if it isnt 
+     * @return boolean: true if book is available, false if it isnt 
      */
     public boolean isAvailable(String title){
       boolean returnBool;

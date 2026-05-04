@@ -5,24 +5,44 @@ public class Course {
     private String subjectNumber;
     private String meetingTime; 
 
+
+    /**
+     * Constructor
+     * @param name
+     * @param subjectNumber
+     * @param meetingTime
+     */
     public Course(String name, String subjectNumber, String meetingTime) {
         this.name = name;
         this.subjectNumber = subjectNumber;
         this.meetingTime = meetingTime; 
     }
 
+    /**
+     * Accessor for name of course
+     * @return String name of course
+     */
     public String getName() {
         return this.name;
     }
-
+/**
+ * accessor for subject number
+ * @return String number of the subject
+ */
     public String getSubjectNumber() {
         return this.subjectNumber;
     }
-
+/**
+ * Accessor for meeting times
+ * @return String schedule/meeting time of course
+ */
     public String getMeetingTime() {
         return this.meetingTime;
     }
-
+/**
+ * pretty print function
+ * @return String of course description
+ */
     public String toString() {
         return this.subjectNumber + ": " + this.name + " " + this.meetingTime; 
     }

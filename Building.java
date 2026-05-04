@@ -21,6 +21,7 @@ public class Building implements BuildingRequirements {
 
     /**
      * Accessor for the name attribute of the Building
+     * @return String name of Building
      */
     public String getName() {
         return this.name;
@@ -28,6 +29,7 @@ public class Building implements BuildingRequirements {
 
     /**
      * Accessor for the adress attribute of the Building
+     * @return String address of building
      */
     public String getAddress() {
         return this.address;
@@ -35,6 +37,7 @@ public class Building implements BuildingRequirements {
 
     /**
      * Accessor for the nFloors attribute of the Building
+     * @return int number of floors in building 
      */
     public int getFloors() {
         return this.nFloors;
